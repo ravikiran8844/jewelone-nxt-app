@@ -1,0 +1,106 @@
+.footer_wrapper{
+    background: #9F212C;
+}
+.footer-block-1{
+    text-align: left;
+}
+.footer-links{
+    margin: 10px 0;
+    text-align: left !important;
+}
+.footer_wrapper img{
+    height: 100px;
+    width: auto;
+}
+.footer-text{
+    color: #FFF;
+    font-size: 18px;
+    font-family: Sharp Sans;
+    font-weight: 500;
+    line-height: 140%;
+}
+.footer-copy-text{
+    align-self: end;
+}
+.follow-us{
+    border-top: 1px solid #CA4F5A;
+    padding-top: 10px;
+}
+.footer-main-text{
+    color: #F7C676;
+    font-size: 24px;
+    font-family: Canela Trial;
+    font-weight: 500;
+    line-height: 140%;
+}
+.footer_wrapper a{
+    text-decoration: none;
+}
+.subscribe-btn{
+    border-radius: 8.728px;
+    background: #F7C676;
+    color: #2D2D2D;
+    font-size: 21.335px;
+    font-family: Optima;
+    font-weight: 700;
+
+}
+.subscribe-input{
+    background: transparent;
+    color: #C0676F !important;
+    font-size: 18px;
+    font-family: Optima;
+    border: none;
+    outline: none;
+}
+.subscribe-btn:hover{
+    border-radius: 8.728px;
+    background: #F7C676;
+    color: #2D2D2D;
+    font-size: 21.335px;
+    font-family: Optima;
+    font-weight: 700;
+
+}
+.footer-input-group{
+    padding: 5px;
+    border-radius: 8.728px;
+    border: 0.97px solid #D49950;
+    background: #9F212C !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-input::placeholder{
+    color: #C0676F;
+    font-size: 18px;
+    font-family: Optima;
+    line-height: 140%;;
+}
+.form-control:focus{
+    background: #9F212C !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow:none !important;
+}
+
+
+@media (max-width:768px){
+    .footer-block-1{
+        text-align: center;
+    }
+    .footer-main-text{
+        color: #F7C676;
+        font-size: 16.42px;
+        font-family: Canela Trial;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    .footer-text{
+        color: #FFF;
+        font-size: 14px;
+        font-family: Sharp Sans;
+        font-weight: 500;
+        line-height: 130%;
+    }
+}
