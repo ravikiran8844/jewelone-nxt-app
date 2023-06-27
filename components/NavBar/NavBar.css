@@ -1,0 +1,26 @@
+.navbar_wrapper{
+    min-height: 93px;
+}
+nav a{
+    color: #1F1F1F;
+    font-family: Sharp Sans;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-logo{
+    width: 100%;
+    height: auto;
+    max-width: 157px;
+}
+
+@media (min-width:768px) {
+    .nav-logo{  
+    max-width: 300px;
+    max-height: 77px;
+    width: 100%;
+    height: auto;
+    }
+}

@@ -1,0 +1,25 @@
+.lwts-wrapper{
+    background: #FFF6EC;
+}
+.lwts-item{
+    border-right: 1px solid #F3E3CA;
+    margin-bottom: 20px;
+}
+.lwts-item:last-child{
+    border-right: none;
+}
+.lwts-wrapper img{
+    width: 100%;
+    height: auto;
+    max-width: 96.405px;
+    max-height: 96.405px;
+}
+
+@media (min-width:768px) {
+    .lwts-wrapper img{
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+        max-height: 150px;
+    }
+}

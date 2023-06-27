@@ -1,0 +1,45 @@
+.video_wrapper{
+    position: relative; 
+}
+.video_item{
+    position: relative;
+    
+}
+
+.video_item_content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.video_item_textBox{
+ max-width: 450px;
+}
+.video_item_title{
+    color: #FFF;
+    font-size: 54px;
+    font-family: Canela Trial;
+    font-weight: 500;
+    line-height: 135%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.video_item_text{
+    color: #FFF;
+    font-size: 22px;
+    font-family: Sharp Sans;
+    font-weight: 500;
+    line-height: 132.4%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.video_item_svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: .5;
+}
+.video_item_svg svg{
+    height: 70px;
+    width: 70px;
+}
