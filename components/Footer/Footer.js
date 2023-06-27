@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='footer_wrapper py-5'>
       <div className='container'>
-        <div className='row gx-2 footer-block-1'>
+        <div className='row gx-3 footer-block-1'>
             <div className='col-12 col-lg-4 mb-4'>
                 <div>
                     <Image src="/footer-logo.png" width={200} height={158} alt='footer logo' />
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
            <div className='col-12 col-lg-8'>
                 <div className='row gx-1 d-flex flex-wrap'>
-                    <div className='col-6 col-md-4 mb-4 order-2 order-md-1'>
+                    <div className='col col-md-4 mb-4 order-2 order-md-1'>
                             <div className='link-items'>
                                 <div className='footer-main-text mb-4'>Information</div>
                                     <div className='footer-links footer-text'>Blog</div>
@@ -30,7 +30,7 @@ const Footer = () => {
                                     <div className='footer-links footer-text'>About JewelOne</div>
                             </div>
                     </div>
-                    <div className='footer-contact-block col-6 col-md-5 mb-4 order-3 order-md-2'>
+                    <div className='footer-contact-block col col-md-5 mb-4 order-3 order-md-2'>
                         <div className='footer-main-text mb-4'>Contact Us</div>
 
                                     <div  className='footer-links footer-text  d-flex gap-2'><span>
