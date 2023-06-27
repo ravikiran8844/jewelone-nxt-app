@@ -4,7 +4,7 @@ import './LocateUsSection.css'
 const LocateUsSection = () => {
   return (
     <div className='lus_wrapper py-5'>
-      <div className='container p-0'>
+      <div className='container px-0'>
         <div className='col-12 text-center'>
             <div className='main-title mb-4'>Locate Us</div>
         </div>

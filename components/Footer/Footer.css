@@ -4,6 +4,13 @@
 .footer-block-1{
     text-align: left;
 }
+.footer-contact-block svg{
+    height: 22px;
+    width: 22px;
+}
+.text-center-mobile{
+    text-align: center;
+}
 .footer-links{
     margin: 10px 0;
     text-align: left !important;
@@ -32,9 +39,15 @@
     font-family: Canela Trial;
     font-weight: 500;
     line-height: 140%;
+    text-align: left;
 }
 .footer_wrapper a{
     text-decoration: none;
+}
+.appStore img{
+max-width:133px;
+height: auto;
+width: 100%;
 }
 .subscribe-btn{
     border-radius: 8.728px;
@@ -102,5 +115,8 @@
         font-family: Sharp Sans;
         font-weight: 500;
         line-height: 130%;
+    }
+    .text-center-mobile{
+        text-align: left;
     }
 }
