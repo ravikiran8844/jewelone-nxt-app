@@ -1,6 +1,41 @@
 .image-banner__item{
     position: relative;
 }
+.image-banner__item .form-control{
+background-color: #FFF !important;
+}
+.image-banner__item .form-control:focus{
+    background-color: #FFF !important;
+
+}
+.image-banner__item input{
+    color: #B6B6B6;
+    font-size: 17px;
+    font-family: Sharp Sans;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.image-banner__item .form-btn{
+    border-radius: 7.042px;
+    background: #9F212C;
+    color: #FFF;
+    text-align: center;
+    font-size: 17.605px;
+    font-family: Sharp Sans;
+    font-weight: 700;
+    line-height: 100%;
+}
+.image-banner__item .form-btn:hover{
+    border-radius: 7.042px;
+    background: #9F212C;
+    color: #FFF;
+    text-align: center;
+    font-size: 17.605px;
+    font-family: Sharp Sans;
+    font-weight: 700;
+    line-height: 100%;
+}
 .book-slot-text{
     color: #C0832B;
     font-size: 26px;
@@ -8,6 +43,41 @@
 }
 .image-banner__item img{
     position: relative;
+}
+.image-banner__desktop-img {
+    width: 100%;
+    height: auto;
+    max-height: 890px;
+}
+.image-banner__item-content-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    max-width: 309px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.image-banner__item-content-mobile-title{
+    color: #FFF;
+    font-size: 3.5rem;
+    font-family: Canela Trial;
+    line-height: 92%;
+    letter-spacing: -2.213px;
+}
+.image-banner__item-content-mobile-caption{
+    color: #FFF;
+    font-size: 15.175px;
+    font-family: Optima;
+}
+.image-banner__item-content-mobile-text{
+    color: #FFF;
+    font-size: 15.175px;
+    font-family: Optima;
+}
+.image-banner__mobile-img {
+    width: 100%;
+    height: auto;
+    max-height: 579px;
 }
 .image-banner__item-content img{
     max-width: 200px;

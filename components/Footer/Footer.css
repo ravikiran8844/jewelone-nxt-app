@@ -91,7 +91,7 @@ width: 100%;
     font-family: Optima;
     line-height: 140%;;
 }
-.form-control:focus{
+.footer_wrapper .form-control:focus{
     background: #9F212C !important;
     border: none !important;
     outline: none !important;
