@@ -11,7 +11,7 @@ const ImageBannerSection = () => {
                    <div>
                    <div className='text-center'>
                         <div className='mb-2'>
-                            <Image width={294} height={79} src="/logo.png" alt="Logo" />
+                            <Image loading='eager' priority width={294} height={79} src="/logo.png" alt="Logo" />
                         </div>
                         <div className='mb-2 book-slot-text'>
                         Book Your Slot
