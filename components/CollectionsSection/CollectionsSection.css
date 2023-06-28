@@ -1,0 +1,16 @@
+.collection-section_item{
+    max-width: 376px;
+    min-height: 250px;
+    height: auto;
+    flex-shrink: 0;
+    border: 0.88px solid #C8C8C8;
+    margin: 0 20px;
+}
+.collection-slider{
+    max-height: 372px;
+    overflow: hidden;
+}
+.collection-section_item img{
+    width: 250px;
+    height: 250px;
+}

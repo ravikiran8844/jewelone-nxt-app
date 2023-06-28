@@ -3,7 +3,7 @@
 }
   .google-maps iframe {
     width: 100% !important;
-    height: 613px !important;
+    max-height: 513px !important;
     border-radius: 58px;
 
   }
