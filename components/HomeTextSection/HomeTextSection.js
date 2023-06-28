@@ -35,7 +35,7 @@ const HomeTextSection = () => {
                     Welcome to our Jewelry Experience Center, where beauty meets elegance and sophistication. Step into a world of shimmering brilliance as you explore our extensive collection of gold, silver, diamond and platinum jewelry. 
                     </div>
                     <div className='home-text'>
-                    Whether you're seeking a statement piece for a special occasion or a daily adornment that reflects your unique style, our experience center offers something for everyone.
+                    Whether you are seeking a statement piece for a special occasion or a daily adornment that reflects your unique style, our experience center offers something for everyone.
                     </div>
                 </div>
                 <div className='hts-img-wrapper d-none d-md-block'>
