@@ -10,7 +10,9 @@ import "flickity/css/flickity.css";
 const flickityOptions = {
     contain: true,
     cellAlign: 'left',
-    groupCells: true
+    groupCells: true,
+    pageDots: false
+
 }
 
 

@@ -1,0 +1,30 @@
+.images-slider{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image-slider-item{
+    margin: 0 20px;
+}
+
+
+.image-slider-item-img_wrapper{
+    max-width: 300px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    position: relative;
+    
+}
+.image-slider-item_text{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-family: Canela Trial;
+    font-weight: 500;
+}

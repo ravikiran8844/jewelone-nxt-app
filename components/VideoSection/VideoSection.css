@@ -4,8 +4,9 @@
 }
 .video_item{
     position: relative;
-    
+    min-height: 545px;    
 }
+
 
 .video_item_content{
 position: absolute;
@@ -43,4 +44,16 @@ transform: translate(-50%,-50%);
 .video_item_svg svg{
     height: 70px;
     width: 70px;
+}
+
+
+@media(max-width:768px){
+    .video_item{
+    min-height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    }
+    .video_wrapper{
+        padding: 12px;
+    }
 }

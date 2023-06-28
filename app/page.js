@@ -6,6 +6,7 @@ import LocateUsSection from '@/components/LocateUsSection/LocateUsSection'
 import ImageBannerSection from '@/components/ImageBannerSection/ImageBannerSection'
 import CollectionsSection from '@/components/CollectionsSection/CollectionsSection'
 import Test from '@/components/Test/Test'
+import ImagesSliderSection from '@/components/ImagesSliderSection/ImagesSliderSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     {/* <Test/> */}
     <ImageBannerSection/>
     <LogoWithTextSection/>
+    <ImagesSliderSection/>
     <CollectionsSection/>
     <VideoSection/>
     <LocateUsSection/>
