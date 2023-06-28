@@ -1,5 +1,6 @@
 .lwts-wrapper{
     background: #FFF6EC;
+    position: relative;
 }
 .lwts-item{
     border-right: 1px solid #F3E3CA;

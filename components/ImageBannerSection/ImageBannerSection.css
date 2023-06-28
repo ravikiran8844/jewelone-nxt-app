@@ -85,6 +85,7 @@ background-color: #FFF !important;
     height: auto;
 }
 .image-banner__item-content{
+    z-index: 1;
     position: absolute;
     right: 30px;
     top: 50%;
