@@ -87,7 +87,7 @@ const handleFirstNameChange = (e) => {
                    <div>
                    <div className='text-center'>
                         <div className='mb-2'>
-                            <Image width={294} height={79} src="/logo.png" alt="Logo" />
+                            <Image width={250} height={60} src="/logo.png" alt="Logo" />
                         </div>
                         <div className='mb-2 book-slot-text'>
                         Book Your Slot
