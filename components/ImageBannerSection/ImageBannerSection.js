@@ -1,8 +1,82 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import './ImageBannerSection.css'
 import Image from 'next/image'
 const ImageBannerSection = () => {
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [city, setCity] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [email, setEmail] = useState('');
+    const [factoryVisit, setFactoryVisit] = useState(true);
+
+    const [firstNameValid, setFirstNameValid] = useState(true);
+    const [lastNameValid, setLastNameValid] = useState(true);
+    const [cityValid, setCityValid] = useState(true);
+    const [phoneNumberValid, setPhoneNumberValid] = useState(true);
+    const [emailValid, setEmailValid] = useState(true);
+
+
+    const handleSubmit = () => {
+
+        // Validate the form fields
+        const isValid =
+        firstName !== '' &&
+        lastName !== '' &&
+        city !== '' &&
+        validatePhoneNumber(phoneNumber) &&
+        validateEmail(email);
+
+  // Set validity state for each field
+  setFirstNameValid(firstName !== '');
+  setLastNameValid(lastName !== '');
+  setCityValid(city !== '');
+  setPhoneNumberValid(validatePhoneNumber(phoneNumber));
+  setEmailValid(validateEmail(email));
+
+  if (isValid) {
+       alert(`Hi ${firstName}, Your slot is Booked!`);
+    } 
+};
+
+const handleFirstNameChange = (e) => {
+    setFirstName(e.target.value);
+    setFirstNameValid(true);
+  };
+
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+    setLastNameValid(true);
+  };
+
+  const handleCityChange = (e) => {
+    setCity(e.target.value);
+    setCityValid(true);
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    setPhoneNumber(e.target.value);
+    setPhoneNumberValid(true);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailValid(true);
+  };
+
+  const validatePhoneNumber = (number) => {
+    // Regular expression for a valid phone number (10 digits)
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(number);
+  };
+
+  const validateEmail = (email) => {
+    // Regular expression for a valid email address
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <div className='image-banner-section'>
         <div className='container-fluid px-0'>
@@ -21,45 +95,99 @@ const ImageBannerSection = () => {
                     </div>
                     <div className='row'>
                         <div className='col-6 mb-2'>
-                            <label for="first-name">First name*</label>
-                            <input  className='form-control'type="text" id='first-name' name="first-name" value=""/>
+                            <label htmlFor="first-name">First name*</label>
+                            <input
+                            className={`form-control ${!firstNameValid ? 'is-invalid' : ''}`}
+                            type="text"
+                            id='first-name'
+                            name="first-name"
+                            value={firstName}
+                            onChange={handleFirstNameChange}
+                            />
+                            {!firstNameValid && <div className="invalid-feedback">Please enter your first name.</div>}
                         </div>
                         <div className='col-6 mb-2'>
-                        <label for="first-name">Last name*</label>
-                            <input className='form-control' type="text" id='last-name' name="last-name" value=""/>
+                            <label htmlFor="last-name">Last name*</label>
+                            <input
+                            className={`form-control ${!lastNameValid ? 'is-invalid' : ''}`}
+                            type="text"
+                            id='last-name'
+                            name="last-name"
+                            value={lastName}
+                            onChange={handleLastNameChange}
+                            />
+                            {!lastNameValid && <div className="invalid-feedback">Please enter your last name.</div>}
                         </div>
                         <div className='col-6 mb-2'>
-                            <label for="city">City</label>
-                                <select id='city' className='form-control'>
-                                    <option disabled value="">Enter your city</option>
-                                    <option value="ap">Andhra Pradesh</option>
-                                    <option value="ts">Telengana</option>
-
-                                </select>
+                            <label htmlFor="city">City*</label>
+                            <input
+                            className={`form-control ${!cityValid ? 'is-invalid' : ''}`}
+                            type="text"
+                            id='city'
+                            name="city"
+                            value={city}
+                            onChange={handleCityChange}
+                            />
+                            {!cityValid && <div className="invalid-feedback">Please enter your city.</div>}
                         </div>
                         <div className='col-6 mb-2'>
-                        <label for="phone-num">Phone Number*</label>
-                            <input className='form-control' type="tel" id='phone-num' name="phone-num" value=""/>
+                            <label htmlFor="phone-num">Phone Number*</label>
+                            <input
+                            className={`form-control ${!phoneNumberValid ? 'is-invalid' : ''}`}
+                            type="tel"
+                            id='phone-num'
+                            name="phone-num"
+                            value={phoneNumber}
+                            onChange={handlePhoneNumberChange}
+                            />
+                            {!phoneNumberValid && <div className="invalid-feedback">Please enter a valid 10-digit phone number.</div>}
                         </div>
                         <div className='col-12 mb-2'>
-                            <label for="email">Email address*</label>
-                            <input  className='form-control'type="email" id='email' name="email" value=""/>
+                            <label htmlFor="email">Email address*</label>
+                            <input
+                            className={`form-control ${!emailValid ? 'is-invalid' : ''}`}
+                            type="email"
+                            id='email'
+                            name="email"
+                            value={email}
+                            onChange={handleEmailChange}
+                            />
+                            {!emailValid && <div className="invalid-feedback">Please enter a valid email address.</div>}
                         </div>
                         <div className='col-6 mb-2'>
                             <div>Factory Visit:</div>
                             <div>
-                            <label for="yes">Yes</label>
-                            <input  className='ms-1' type="checkbox" id="yes" name="yes" value="yes"/>
-                            <label className='ms-3' for="no">No</label>
-                            <input  className='ms-1' type="checkbox" id="no" name="no" value="no"/>
+                            <label htmlFor="yes">Yes</label>
+                            <input
+                                className='ms-1'
+                                type="checkbox"
+                                id="yes"
+                                name="yes"
+                                checked={factoryVisit}
+                                onChange={(e) => setFactoryVisit(e.target.checked)}
+                            />
+                            <label className='ms-3' htmlFor="no">No</label>
+                            <input
+                                className='ms-1'
+                                type="checkbox"
+                                id="no"
+                                name="no"
+                                checked={!factoryVisit}
+                                onChange={(e) => setFactoryVisit(!e.target.checked)}
+                            />
                             </div>
                         </div>
                         <div className='col-6 my-2'>
                             <div className=''>
-                            <input className='btn form-btn text-white px-3 py-2 w-100' type="button" value="Submit"/>
+                            <input
+                                className='btn form-btn text-white px-3 py-2 w-100'
+                                type="button"
+                                value="Submit"
+                                onClick={handleSubmit}
+                            />
                             </div>
                         </div>
-                    </div>
+                        </div>
                    </div>
                 </div>
                 <div className='d-block d-sm-none image-banner__item-content-mobile'>
