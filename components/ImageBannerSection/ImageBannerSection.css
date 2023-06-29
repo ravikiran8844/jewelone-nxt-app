@@ -1,6 +1,10 @@
 .image-banner__item{
     position: relative;
 }
+.main-image-slider{
+    max-height: 890px;
+    overflow: hidden;
+}
 .image-banner__item .form-control{
 background-color: #FFF !important;
 }
