@@ -1,3 +1,11 @@
+.home-text-sec-title{
+    color: #9F212C;
+    font-size: 33.857px;
+    font-family: __Canela_Trial_3ac660;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .home-text-section{
     background: #FFF6EC;
 }
@@ -29,6 +37,15 @@
     transform: translate(-50%);
 }
 @media (min-width:768px){
+    .home-text-sec-title{
+        color: #9F212C;
+        text-align: center;
+        font-size: 54px;
+        font-family: Canela Trial;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
     
     .hts-img-wrapper img{
         min-width: 700px;
@@ -38,7 +55,10 @@
     .home-caption-text{
         color: #C0832B;
         text-align: center;
-        font-size: 30px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
         font-family: __Canela_Trial_3ac660;
     }    
     .home-text{

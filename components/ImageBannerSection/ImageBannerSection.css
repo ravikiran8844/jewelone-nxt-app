@@ -38,17 +38,18 @@ background-color: #FFF !important;
 }
 .book-slot-text{
     color: #C0832B;
-    font-size: 26px;
+    font-size: 32px;
     font-family: __Canela_Trial_3ac660;
 }
 .image-banner__item img{
     position: relative;
 }
 .image-banner__desktop-img {
-    min-height: 550px;
+    min-height: 890px;
     width: 100%;
-    height: auto;
     max-height: 890px;
+    object-fit: cover;
+    object-position: top;
 }
 .image-banner__item-content-mobile{
     position: absolute;
@@ -78,10 +79,10 @@ background-color: #FFF !important;
 .image-banner__mobile-img {
     width: 100%;
     height: auto;
-    max-height: 579px;
 }
 .image-banner__item-content img{
-    max-width: 200px;
+    max-width: 294px;
+    max-height: 74px;
     width: 100%;
     height: auto;
 }
@@ -90,9 +91,11 @@ background-color: #FFF !important;
     position: absolute;
     right: 30px;
     top: 50%;
-    transform: translate(-30px,-50%);
+    transform: translate(10px,-50%);
     max-height: 100%;
-    height: auto;  
+    width: 490px;
+    height: max-content;
     border-radius: 37.017px;
     background: #FFF;
-    box-shadow: 0px 0px 76.21160888671875px -23.952219009399414px rgba(0, 0, 0, 0.32);}
+    box-shadow: 0px 0px 76.21160888671875px -23.952219009399414px rgba(0, 0, 0, 0.32);
+}

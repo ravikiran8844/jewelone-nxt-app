@@ -25,7 +25,7 @@ const Footer = () => {
            <div className='col-12 col-lg-8'>
                 <div className='row gx-1 d-flex flex-wrap'>
                     <div className='col col-md-4 mb-4 order-2 order-md-1'>
-                            <div className='link-items'>
+                            <div className='link-items footer-border-right'>
                                 <div className='footer-main-text mb-4'>Information</div>
                                     <div className='footer-links footer-text'>Blog</div>
                                     <div className='footer-links footer-text'>Offers & Contest Details</div>
@@ -33,7 +33,7 @@ const Footer = () => {
                                     <div className='footer-links footer-text'>About JewelOne</div>
                             </div>
                     </div>
-                    <div className='footer-contact-block col col-md-5 mb-4 order-3 order-md-2'>
+                    <div className='ps-2 footer-contact-block col col-md-5 mb-4 order-3 order-md-2'>
                         <div className='footer-main-text mb-4'>Contact Us</div>
 
                                     <div  className='footer-links footer-text  d-flex gap-2'><span>
@@ -62,7 +62,7 @@ const Footer = () => {
                                             </svg>
                                         </span> <span>customercare@jewelone.in</span></div>
                     </div>
-                    <div className='col-12 col-md-3 mb-4 order-1 order-md-3'>
+                    <div className='col-12 col-md-3 mb-4 order-1 order-md-3 footer-border-left ps-2'>
                             <div className='mb-3 footer-main-text text-center-mobile'>
                             Swarna Shakti App Download
                             </div>

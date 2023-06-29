@@ -59,6 +59,10 @@ width: 100%;
     font-weight: 700;
 
 }
+.footer-border-right{
+    border-right: 1px solid #CA4F5A
+}
+
 .subscribe-input{
     background: transparent;
     color: #C0676F !important;
@@ -97,7 +101,9 @@ width: 100%;
     outline: none !important;
     box-shadow:none !important;
 }
-
+.footer-border-left{
+    border-left: 1px solid #CA4F5A;
+}
 
 @media (max-width:768px){
     .footer-block-1{
@@ -119,5 +125,8 @@ width: 100%;
     }
     .text-center-mobile{
         text-align: left;
+    }
+    .footer-border-left{
+        border-left: none;
     }
 }

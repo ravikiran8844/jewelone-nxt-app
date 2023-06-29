@@ -81,20 +81,20 @@ const handleFirstNameChange = (e) => {
     <div className='image-banner-section'>
         <div className='container-fluid px-0'>
             <div className='image-banner__item col-12'>
-                <Image loading='eager' priority  className='image-banner__desktop-img d-none d-sm-block w-100 h-auto' width={1920} height={890} src="/image-banner-1.webp" alt="Image Banner"/>
-                <Image loading='eager' priority  className='image-banner__mobile-img d-block d-sm-none w-100 h-auto' width={428} height={579} src="/mobile-banner-1.webp" alt="Image Banner"/>
-                <div className='image-banner__item-content col-lg-5  p-4 d-none d-lg-block'>
+                <Image loading='eager' priority  className='image-banner__desktop-img d-none d-md-block w-100 h-auto' width={1920} height={890} src="/image-banner-1.webp" alt="Image Banner"/>
+                <Image loading='eager' priority  className='image-banner__mobile-img d-block d-md-none w-100 h-auto' width={428} height={579} src="/mobile-banner-1.webp" alt="Image Banner"/>
+                <div className='image-banner__item-content col-lg-5  p-4 py-5 d-none d-lg-block'>
                    <div>
                    <div className='text-center'>
-                        <div className='mb-2'>
-                            <Image width={250} height={60} src="/logo.png" alt="Logo" />
+                        <div className='mb-4'>
+                            <Image width={294} height={74} src="/logo.png" alt="Logo" />
                         </div>
-                        <div className='mb-2 book-slot-text'>
+                        <div className='mb-4 book-slot-text'>
                         Book Your Slot
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col-6 mb-2'>
+                        <div className='col-6 mb-4'>
                             <label htmlFor="first-name">First name*</label>
                             <input
                             className={`form-control ${!firstNameValid ? 'is-invalid' : ''}`}
@@ -106,7 +106,7 @@ const handleFirstNameChange = (e) => {
                             />
                             {!firstNameValid && <div className="invalid-feedback">Please enter your first name.</div>}
                         </div>
-                        <div className='col-6 mb-2'>
+                        <div className='col-6 mb-4'>
                             <label htmlFor="last-name">Last name*</label>
                             <input
                             className={`form-control ${!lastNameValid ? 'is-invalid' : ''}`}
@@ -118,7 +118,7 @@ const handleFirstNameChange = (e) => {
                             />
                             {!lastNameValid && <div className="invalid-feedback">Please enter your last name.</div>}
                         </div>
-                        <div className='col-6 mb-2'>
+                        <div className='col-6 mb-4'>
                             <label htmlFor="city">City*</label>
                             <input
                             className={`form-control ${!cityValid ? 'is-invalid' : ''}`}
@@ -130,7 +130,7 @@ const handleFirstNameChange = (e) => {
                             />
                             {!cityValid && <div className="invalid-feedback">Please enter your city.</div>}
                         </div>
-                        <div className='col-6 mb-2'>
+                        <div className='col-6 mb-4'>
                             <label htmlFor="phone-num">Phone Number*</label>
                             <input
                             className={`form-control ${!phoneNumberValid ? 'is-invalid' : ''}`}
@@ -142,7 +142,7 @@ const handleFirstNameChange = (e) => {
                             />
                             {!phoneNumberValid && <div className="invalid-feedback">Please enter a valid 10-digit phone number.</div>}
                         </div>
-                        <div className='col-12 mb-2'>
+                        <div className='col-12 mb-4'>
                             <label htmlFor="email">Email address*</label>
                             <input
                             className={`form-control ${!emailValid ? 'is-invalid' : ''}`}
@@ -154,7 +154,7 @@ const handleFirstNameChange = (e) => {
                             />
                             {!emailValid && <div className="invalid-feedback">Please enter a valid email address.</div>}
                         </div>
-                        <div className='col-6 mb-2'>
+                        <div className='col-6 mb-4'>
                             <div>Factory Visit:</div>
                             <div>
                             <label htmlFor="yes">Yes</label>
@@ -190,7 +190,7 @@ const handleFirstNameChange = (e) => {
                         </div>
                    </div>
                 </div>
-                <div className='d-block d-sm-none image-banner__item-content-mobile'>
+                <div className='d-block d-md-none image-banner__item-content-mobile'>
                     <div>
                         <div>
                         <svg width="54" height="41" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">

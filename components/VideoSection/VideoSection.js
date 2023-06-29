@@ -11,7 +11,7 @@ const VideoSection = () => {
     </video>
     <div className='video_item_content container d-flex align-items-center'>
         <div className='video_item_textBox d-none d-lg-block'>
-            <div className='video_item_title fs-1 fw-bold'>
+            <div className='video_item_title mb-4'>
             A Journey Inside Our Dazzling Jewelry Factory!
             </div>
             <div className='video_item_text'>

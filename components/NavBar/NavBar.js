@@ -11,7 +11,7 @@ import Image from 'next/image';
 function NavBar() {
   return (
     <Navbar expand="xl" className="bg-white navbar_wrapper">
-      <Container>
+      <Container fluid className="px-md-5">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Brand><Link href="/"><Image className='nav-logo' width={300} height={77} src="/logo.png" alt="Jewelone Logo" /></Link></Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
