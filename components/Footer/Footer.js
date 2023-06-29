@@ -68,10 +68,10 @@ const Footer = () => {
                             </div>
                             <div className="appStore d-flex gap-3 flex-md-column">
                                 <div>
-                                    <Link href="#"><Image className='w-100 h-auto' width={133} height={43} src="/app-store.png" alt='App Store'/></Link>
+                                    <Link target="_blank" href="https://apps.apple.com/id/app/jewelone/id1507128724"><Image className='w-100 h-auto' width={133} height={43} src="/app-store.png" alt='App Store'/></Link>
                                 </div>
                                 <div>
-                                        <Link href="#"><Image className='w-100 h-auto' width={133} height={43} src="/google-play.png" alt='App Store'/></Link>
+                                        <Link target="_blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit"><Image className='w-100 h-auto' width={133} height={43} src="/google-play.png" alt='App Store'/></Link>
                                 </div>
                             </div>
                     </div>
