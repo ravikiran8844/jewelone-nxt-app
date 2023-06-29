@@ -1,11 +1,29 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from '@/components/NavBar/NavBar';
 import AnnouncementBar from '@/components/AnnouncementBar/AnnouncementBar';
 import Footer from '@/components/Footer/Footer';
 
-const inter = Inter({ subsets: ['latin'] })
+import localFont from 'next/font/local'
+ 
+// Font files can be colocated inside of `app`
+const Canela_Trial = localFont({
+  src: './Canela-Regular-Trial.woff',
+  display: 'swap'
+})
+
+const SharpSans = localFont({
+  src: './Sharp Sans Medium.woff',
+  display: 'swap'
+})
+
+const Optima = localFont({
+  src: './Optima Medium.woff',
+  display: 'swap'
+})
+
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Jewelone - Next JS APP',
@@ -15,7 +33,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${Canela_Trial.className} ${SharpSans.className} ${Optima.className}`}>
         <AnnouncementBar/>
         <NavBar/>
         <main>

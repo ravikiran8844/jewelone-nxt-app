@@ -21,7 +21,7 @@ transform: translate(-50%,-50%);
 .video_item_title{
     color: #FFF;
     font-size: 54px;
-    font-family: Canela Trial;
+    font-family: __Canela_Trial_3ac660;
     font-weight: 500;
     line-height: 135%;
     filter: drop-shadow(2px 4px 6px black);
@@ -29,7 +29,7 @@ transform: translate(-50%,-50%);
 .video_item_text{
     color: #FFF;
     font-size: 22px;
-    font-family: Sharp Sans;
+    font-family: __SharpSans_002b07;
     font-weight: 500;
     line-height: 132.4%;
     filter: drop-shadow(2px 4px 6px black);

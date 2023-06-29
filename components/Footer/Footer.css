@@ -23,7 +23,7 @@
 .footer-text{
     color: #FFF;
     font-size: 18px;
-    font-family: Sharp Sans;
+    font-family: __SharpSans_002b07;
     font-weight: 500;
     line-height: 140%;
 }
@@ -37,7 +37,7 @@
 .footer-main-text{
     color: #F7C676;
     font-size: 24px;
-    font-family: Canela Trial;
+    font-family: __Canela_Trial_3ac660;
     font-weight: 500;
     line-height: 140%;
     text-align: left;
@@ -55,7 +55,7 @@ width: 100%;
     background: #F7C676;
     color: #2D2D2D;
     font-size: 21.335px;
-    font-family: Optima;
+    font-family: __Optima_f14549;
     font-weight: 700;
 
 }
@@ -63,7 +63,7 @@ width: 100%;
     background: transparent;
     color: #C0676F !important;
     font-size: 18px;
-    font-family: Optima;
+    font-family: __Optima_f14549;
     border: none;
     outline: none;
 }
@@ -72,7 +72,7 @@ width: 100%;
     background: #F7C676;
     color: #2D2D2D;
     font-size: 21.335px;
-    font-family: Optima;
+    font-family: __Optima_f14549;
     font-weight: 700;
 
 }
@@ -88,7 +88,7 @@ width: 100%;
 .subscribe-input::placeholder{
     color: #C0676F;
     font-size: 18px;
-    font-family: Optima;
+    font-family: __Optima_f14549;
     line-height: 140%;;
 }
 .footer_wrapper .form-control:focus{
@@ -106,14 +106,14 @@ width: 100%;
     .footer-main-text{
         color: #F7C676;
         font-size: 16.42px;
-        font-family: Canela Trial;
+        font-family: __Canela_Trial_3ac660;
         font-weight: 500;
         line-height: 140%;
     }
     .footer-text{
         color: #FFF;
         font-size: 14px;
-        font-family: Sharp Sans;
+        font-family: __SharpSans_002b07;
         font-weight: 500;
         line-height: 130%;
     }

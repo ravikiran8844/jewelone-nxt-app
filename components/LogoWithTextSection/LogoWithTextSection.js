@@ -23,7 +23,7 @@ const LogoWithTextSection = () => {
                 <div className='col-6 col-md-3 lwts-item'>
                     <div className='text-center'>
                         <Image width={150} height={150}  src="/logo2.png" alt="Endless Customisation" />
-                        <div className='my-3'>
+                        <div className='my-3 main-text'>
                         Endless Customisation
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const LogoWithTextSection = () => {
                 <div className='col-6 col-md-3 lwts-item'>
                     <div className='text-center'>
                         <Image width={150} height={150}  src="/logo3.png" alt="12000+ SQ ft Showroom" />
-                        <div className='my-3'>
+                        <div className='my-3 main-text'>
                         12000+ SQ ft Showroom
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const LogoWithTextSection = () => {
                 <div className='col-6 col-md-3 lwts-item'>
                     <div className='text-center'>
                         <Image width={150} height={150}  src="/logo4.png" alt="Unmatched Finish" />
-                        <div className='my-3'>
+                        <div className='my-3 main-text'>
                         Unmatched Finish
                         </div>
                     </div>
