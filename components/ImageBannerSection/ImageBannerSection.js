@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 import Flickity from 'react-flickity-component'
 import "flickity/css/flickity.css";
 import './ImageBannerSection.css'
@@ -99,7 +99,7 @@ const handleFirstNameChange = (e) => {
          Book Your Slot
          </div>
      </div>
-     <div className='row g-0'>
+     <div className='row gx-2'>
          <div className='col-6 mb-4'>
              <label htmlFor="first-name">First name*</label>
              <input
@@ -208,7 +208,8 @@ const ImageBannerSection = () => {
                 options={flickityOptions} 
                 disableImagesLoaded={false} 
                 reloadOnUpdate 
-                static >
+                static
+                >
                 <div className='image-banner__item col-12'>
                 <Image loading='eager' priority  className='image-banner__desktop-img d-none d-md-block w-100 h-auto' width={1920} height={890} src="/image-banner-1.webp" alt="Image Banner"/>
                 <Image loading='eager' priority  className='image-banner__mobile-img d-block d-md-none w-100 h-auto' width={428} height={579} src="/mobile-banner-1.webp" alt="Image Banner"/>
