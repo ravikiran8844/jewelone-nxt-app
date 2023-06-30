@@ -1,8 +1,25 @@
 .images-slider{
     max-height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
+.images-slider-section{
+    overflow: hidden;
+}
+.images-slider-section .flickity-prev-next-button  {
+    top: -80px !important;
+    background-color: #C0832B !important;
+    color: #FFFFFF !important;
+    height: 35px;
+    width: 35px;
+}
+.images-slider-section .flickity-prev-next-button.previous{
+    left: revert;
+    right: 50px;
+}
+.images-slider-section .flickity-button:focus{
+    box-shadow: none;
+}
 .image-slider-item{
     margin: 0 20px;
 }
