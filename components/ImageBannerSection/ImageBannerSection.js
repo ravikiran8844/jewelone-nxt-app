@@ -101,22 +101,24 @@ const handleFirstNameChange = (e) => {
      </div>
      <div className='row gx-2'>
          <div className='col-6 mb-4'>
-             <label htmlFor="first-name">First name*</label>
+             <label htmlFor="first-name">First name<span className='star'>*</span></label>
              <input
              className={`form-control ${!firstNameValid ? 'is-invalid' : ''}`}
              type="text"
              id='first-name'
              name="first-name"
              value={firstName}
+             placeholder='Enter first name'
              onChange={handleFirstNameChange}
              />
              {!firstNameValid && <div className="invalid-feedback">Please enter your first name.</div>}
          </div>
          <div className='col-6 mb-4'>
-             <label htmlFor="last-name">Last name*</label>
+             <label htmlFor="last-name">Last name<span className='star'>*</span></label>
              <input
              className={`form-control ${!lastNameValid ? 'is-invalid' : ''}`}
              type="text"
+             placeholder='Enter last name'
              id='last-name'
              name="last-name"
              value={lastName}
@@ -125,10 +127,11 @@ const handleFirstNameChange = (e) => {
              {!lastNameValid && <div className="invalid-feedback">Please enter your last name.</div>}
          </div>
          <div className='col-6 mb-4'>
-             <label htmlFor="city">City*</label>
+             <label htmlFor="city">City<span className='star'>*</span></label>
              <input
              className={`form-control ${!cityValid ? 'is-invalid' : ''}`}
              type="text"
+             placeholder='Enter your city'
              id='city'
              name="city"
              value={city}
@@ -137,10 +140,11 @@ const handleFirstNameChange = (e) => {
              {!cityValid && <div className="invalid-feedback">Please enter your city.</div>}
          </div>
          <div className='col-6 mb-4'>
-             <label htmlFor="phone-num">Phone Number*</label>
+             <label htmlFor="phone-num">Phone Number<span className='star'>*</span></label>
              <input
              className={`form-control ${!phoneNumberValid ? 'is-invalid' : ''}`}
              type="tel"
+             placeholder='+91'
              id='phone-num'
              name="phone-num"
              value={phoneNumber}
@@ -149,10 +153,11 @@ const handleFirstNameChange = (e) => {
              {!phoneNumberValid && <div className="invalid-feedback">Please enter a valid 10-digit phone number.</div>}
          </div>
          <div className='col-12 mb-4'>
-             <label htmlFor="email">Email address*</label>
+             <label htmlFor="email">Email address<span className='star'>*</span></label>
              <input
              className={`form-control ${!emailValid ? 'is-invalid' : ''}`}
              type="email"
+             placeholder='Enter your email'
              id='email'
              name="email"
              value={email}
@@ -161,8 +166,8 @@ const handleFirstNameChange = (e) => {
              {!emailValid && <div className="invalid-feedback">Please enter a valid email address.</div>}
          </div>
          <div className='col-6 mb-4'>
-             <div>Factory Visit:</div>
-             <div>
+             <label>Factory Visit:</label>
+             <div className='factory-visit d-flex align-items-center mt-2'>
              <label htmlFor="yes">Yes</label>
              <input
                  className='ms-1'
@@ -183,14 +188,13 @@ const handleFirstNameChange = (e) => {
              />
              </div>
          </div>
-         <div className='col-6 my-2'>
+         <div className='col-6 mt-4'>
              <div className=''>
-             <input
+             <button
                  className='btn form-btn text-white px-3 py-2 w-100'
                  type="button"
-                 value="Submit"
                  onClick={handleSubmit}
-             />
+             >Submit</button>
              </div>
          </div>
          </div>
