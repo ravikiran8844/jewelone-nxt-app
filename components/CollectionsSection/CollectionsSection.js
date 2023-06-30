@@ -46,7 +46,7 @@ const CollectionsSection = () => {
                         Gold
                         </div>
                         <div className='know-more-link mb-3'>
-                            <Link href="">Know More..</Link>
+                            <Link href="/collections/gold">Know More..</Link>
                         </div>
                     </div>
                     <div className='col collection-section_item mb-4 text-center'>
@@ -57,7 +57,7 @@ const CollectionsSection = () => {
                         Silver
                         </div>
                         <div className='know-more-link mb-3'>
-                            <Link href="">Know More..</Link>
+                            <Link href="/collections/silver">Know More..</Link>
                         </div>
                     </div>
                     <div className='col collection-section_item mb-4 text-center'>
@@ -68,7 +68,7 @@ const CollectionsSection = () => {
                         Diamond
                         </div>
                         <div className='know-more-link mb-3'>
-                            <Link href="">Know More..</Link>
+                            <Link href="/collections/diamond">Know More..</Link>
                         </div>
                     </div>
                     <div className='col collection-section_item mb-4 text-center'>
@@ -79,7 +79,7 @@ const CollectionsSection = () => {
                         Platinum
                         </div>
                         <div className='know-more-link mb-3'>
-                            <Link href="">Know More..</Link>
+                            <Link href="/collections/platinum">Know More..</Link>
                         </div>
                     </div>
                    
