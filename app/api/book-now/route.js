@@ -10,7 +10,7 @@ import { NextRequest, NextResponse } from "next/server";
         service: 'gmail',
         auth: {
           user: 'jewelone57@gmail.com',
-          pass: oslbkrmelsuxvzod
+          pass: 'oslbkrmelsuxvzod'
         }
       });
       
