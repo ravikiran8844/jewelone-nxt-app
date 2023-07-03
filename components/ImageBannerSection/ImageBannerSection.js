@@ -49,30 +49,7 @@ const FormComponent=()=>{
 
   if (isValid) {
        alert(`Hi ${firstName}, Your slot is Booked!`);
-     
-       try {
-        const response = await fetch(`${process.env.WEBSITE_URL}/api/book-now`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ firstName,lastName, email,phoneNumber,city,factoryVisit }),
-        });
-  
-        if (response.ok) {
-          console.log('Email sent successfully');
-          // Clear form fields
-          setFirstName('');
-          setLastName('');
-          setEmail('');
-          setPhoneNumber('');
-          setCity('');
-        } else {
-          console.error('Failed to send email');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-      }
+       sendDataToEmail();
     } 
 };
 
@@ -112,6 +89,30 @@ const handleFirstNameChange = (e) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
+
+  const sendDataToEmail=async()=>{
+const url=process.env.NEXT_PUBLIC_URL
+console.log(url);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/book-now`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ firstName,lastName, email,phoneNumber,city,factoryVisit }),
+    });
+console.log(response);
+    if (response.ok) {
+      console.log('Email sent successfully');
+      // Clear form fields
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setPhoneNumber('');
+      setCity('');
+    } else {
+      console.error('Failed to send email');
+    }
+} 
 
     return(<div className='image-banner__item-content col-lg-5  p-4 py-5 d-none d-lg-block'>
     <div>

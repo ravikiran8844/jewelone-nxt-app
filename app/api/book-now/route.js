@@ -7,17 +7,17 @@ import { NextRequest, NextResponse } from "next/server";
     console.log(firstName);
     
     const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: process.env.SMTP_PORT,
+        host: process.env.NEXT_PUBLIC_SMTP_HOST,
+        port: process.env.NEXT_PUBLIC_SMTP_PORT,
         secure: true,
         auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          user: process.env.NEXT_PUBLIC_SMTP_USER,
+          pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD
         }
       });
       
       const mailOptions = {
-        from: process.env.SMTP_USER,
+        from: process.env.NEXT_PUBLIC_SMTP_USER,
         to: 'ravikiran@superclusterpi.com',
         subject: 'New Slot Booking Lead - Jewelone',
         html: `<p>You have a form submission</p><br>
