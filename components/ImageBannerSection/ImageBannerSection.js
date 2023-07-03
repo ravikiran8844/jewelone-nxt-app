@@ -51,7 +51,7 @@ const FormComponent=()=>{
        alert(`Hi ${firstName}, Your slot is Booked!`);
      
        try {
-        const response = await fetch('api/book-now', {
+        const response = await fetch('/api/book-now', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

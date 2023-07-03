@@ -11,13 +11,13 @@ import { NextRequest, NextResponse } from "next/server";
         port: process.env.SMTP_PORT,
         secure: true,
         auth: {
-          user: process.env.SMTP_USERNAME,
+          user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASSWORD
         }
       });
       
       const mailOptions = {
-        from: process.env.SMTP_USERNAME,
+        from: process.env.SMTP_USER,
         to: 'ravikiran@superclusterpi.com',
         subject: 'New Slot Booking Lead - Jewelone',
         html: `<p>You have a form submission</p><br>
@@ -29,7 +29,7 @@ import { NextRequest, NextResponse } from "next/server";
         <p><strong>Factory Visit: </strong> ${factoryVisit}</p><br>`
       };
         try {  
-            transporter.sendMail(mailOptions, function(error, info){
+           transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
                console.log(error);
                 } else {
