@@ -91,7 +91,7 @@ const handleFirstNameChange = (e) => {
   };
 
   const sendDataToEmail=async()=>{
-    const response = await fetch(`https://jewelone-nxt-app.vercel.app/api/book-now`, {
+    const response = await fetch(`/api/book-now`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
