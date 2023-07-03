@@ -30,7 +30,7 @@ const FormComponent=()=>{
     const [emailValid, setEmailValid] = useState(true);
 
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
 
         // Validate the form fields
         const isValid =
@@ -49,6 +49,30 @@ const FormComponent=()=>{
 
   if (isValid) {
        alert(`Hi ${firstName}, Your slot is Booked!`);
+     
+       try {
+        const response = await fetch('/api/book-now', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ firstName,lastName, email,phoneNumber,city,factoryVisit }),
+        });
+  
+        if (response.ok) {
+          console.log('Email sent successfully');
+          // Clear form fields
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+          setPhoneNumber('');
+          setCity('');
+        } else {
+          console.error('Failed to send email');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
     } 
 };
 

@@ -15,10 +15,10 @@ const Footer = () => {
                     <Image src="/footer-logo.png" width={200} height={158} alt='footer logo' />
                 </div>
                 <div className='my-4 footer-text'>Subscribe to email alerts. We promise not to spam your inbox.</div>
-                <div class="footer-input-group">
-                    <input type="email" class="subscribe-input form-control" placeholder="Enter your email"/>
-                    <span class="input-group-btn ml-auto">
-                    <button class="btn subscribe-btn" type="submit">Subscribe</button>
+                <div className="footer-input-group">
+                    <input type="email" className="subscribe-input form-control" placeholder="Enter your email"/>
+                    <span className="input-group-btn ml-auto">
+                    <button className="btn subscribe-btn" type="submit">Subscribe</button>
                     </span>
                 </div>
             </div>
