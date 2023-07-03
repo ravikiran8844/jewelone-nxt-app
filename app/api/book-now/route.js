@@ -5,11 +5,12 @@ import { NextRequest, NextResponse } from "next/server";
     const reqBody = await request.json()
     const {firstName,lastName,email,city,phoneNumber,factoryVisit} = reqBody
     console.log(firstName);
+    
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
           user: 'jewelone57@gmail.com',
-          pass: process.env.CLIENT_EMAIL_PASS
+          pass: oslbkrmelsuxvzod
         }
       });
       
