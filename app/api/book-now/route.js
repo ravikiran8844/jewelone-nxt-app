@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer'
-import { NextRequest, NextResponse } from "next/server";
 
   export async function POST(request){
     const reqBody = await request.json()
@@ -7,15 +6,27 @@ import { NextRequest, NextResponse } from "next/server";
     console.log(firstName);
     
     const transporter = nodemailer.createTransport({
-        host: process.env.NEXT_PUBLIC_SMTP_HOST,
-        port: process.env.NEXT_PUBLIC_SMTP_PORT,
-        secure: true,
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false,
+        requireTLS:true,
         auth: {
           user: process.env.NEXT_PUBLIC_SMTP_USER,
           pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD
         }
       });
-      
+      await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
       const mailOptions = {
         from: process.env.NEXT_PUBLIC_SMTP_USER,
         to: 'ravikiran@superclusterpi.com',
@@ -28,19 +39,15 @@ import { NextRequest, NextResponse } from "next/server";
         <p><strong>Phone No: </strong> ${phoneNumber}</p><br>
         <p><strong>Factory Visit: </strong> ${factoryVisit}</p><br>`
       };
-        try {  
-          const message = await transporter.sendMail(mailOptions, function(error, info){
+          await new Promise((resolve, reject) => {
+          transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
                console.log(error);
                 } else {
                   console.log('Email sent: ' + info.response);
                 }
               });
-            return NextResponse.json({
-                message: "Email sent successfully",
-                success: true
-            })
-        } catch (error) {
-            return NextResponse.json({error: error.message}, {status: 500})
-        }
-    }
+        });
+        res.status(200).json({ status: "OK" });
+};
+  

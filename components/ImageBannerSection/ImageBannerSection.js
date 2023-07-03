@@ -105,11 +105,11 @@ console.log(response);
     if (response.ok) {
       console.log('Email sent successfully');
       // Clear form fields
-      setFirstName('');
-      setLastName('');
-      setEmail('');
-      setPhoneNumber('');
-      setCity('');
+      // setFirstName('');
+      // setLastName('');
+      // setEmail('');
+      // setPhoneNumber('');
+      // setCity('');
     } else {
       console.error('Failed to send email');
     }
