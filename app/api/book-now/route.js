@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 
-  export async function POST(request){
-    const reqBody = await request.json()
+  export async function POST(req, res){
+    const reqBody = await req.json()
     const {firstName,lastName,email,city,phoneNumber,factoryVisit} = reqBody
     console.log(firstName);
     
