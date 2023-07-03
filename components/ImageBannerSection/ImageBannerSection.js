@@ -91,12 +91,15 @@ const handleFirstNameChange = (e) => {
   };
 
   const sendDataToEmail=async()=>{
+    const data={
+      firstName,lastName, email,phoneNumber,city,factoryVisit
+    }
     const response = await fetch(`/api/book-now`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ firstName,lastName, email,phoneNumber,city,factoryVisit }),
+      body: JSON.stringify(data),
     });
 console.log(response);
     if (response.ok) {

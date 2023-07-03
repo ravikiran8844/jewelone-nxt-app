@@ -29,12 +29,11 @@ import { NextRequest, NextResponse } from "next/server";
         <p><strong>Factory Visit: </strong> ${factoryVisit}</p><br>`
       };
         try {  
-           transporter.sendMail(mailOptions, function(error, info){
+          const message = await transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
                console.log(error);
                 } else {
                   console.log('Email sent: ' + info.response);
-                  // do something useful
                 }
               });
             return NextResponse.json({
