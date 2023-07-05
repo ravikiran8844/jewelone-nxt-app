@@ -4,6 +4,7 @@ import Flickity from 'react-flickity-component'
 import "flickity/css/flickity.css";
 import './ImageBannerSection.css'
 import Image from 'next/image'
+import { GoogleSpreadsheet } from "google-spreadsheet";
 
 
 
@@ -102,7 +103,7 @@ const handleFirstNameChange = (e) => {
       },
       body: JSON.stringify(data),
     });
-console.log(response);
+    console.log(response);
     if (response.ok) {
       console.log('Email sent successfully');
       // Clear form fields
@@ -117,39 +118,39 @@ console.log(response);
 } 
 
 const sendDataToSheets=async()=>{
-  const SHEET_ID = "1qME0Rv_flJNOTHgGa2i41kSfT6iDrglz-J5LR7cgd7s";
-const ACCESS_TOKEN ="ya29.a0AbVbY6MmzG1cFl8Pu9EnonZOHzAWfZtNdPmhIo_givssRS2kn7c_7j_CEldF18k8wBVa9gwkz6QlQOzEuz93sHS2zQl3B0jw_pEMF__uRDneSMmt93TD0vb6xwJVWVs6bDWtm-JnXin9ZP5sefwuw8bu3CXoaCgYKAWASARESFQFWKvPlk4xP5tDEcDoz4mSc3xKOCQ0163";
-
   const data={
     firstName,lastName, email,phoneNumber,city,factoryVisit
   }
-  fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1:append?valueInputOption=RAW`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${ACCESS_TOKEN}`
-      },
-      body: JSON.stringify({
-        values: [
-          [
-            firstName,lastName, email,phoneNumber,city,factoryVisit
-          ]
-        ]
-      })
+
+  let username = "ravi.kiran8844@gmail.com"
+  let token = "9529fe5b-a94d-4ef5-8c74-fd889f1c8870"
+  let postData = [ {
+    "firstName" : `${firstName}`,
+    "lastName" : `${lastName}`,
+    "email" : `${email}`,
+    "phoneNumber" : `${phoneNumber}`,
+    "city" : `${city}`,
+    "factoryVisit" : `${factoryVisit}`
+  } ]
+   fetch("https://sheetlabs.com/RK/jewelone" , {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Basic ' + btoa(username + ":" + token)
+  },
+    body: JSON.stringify(postData),
+  })
+  .then(response => {
+    if (response.status === 204) {
+      console.log('Success!');
+    } else {
+      throw new Error('Something went wrong on api server!');
     }
-  )
-    .then((response) => {
-      if (response.ok) {
-        console.log("Data appended successfully:", data);
-      } else {
-        throw new Error("Failed to append data:", data);
-      }
-    })
-    .catch((error) => {
-      console.error("An error occurred while appending data:", error);
-    });
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
 }
 
     return(<div className='image-banner__item-content col-lg-5  p-4 py-5 d-none d-lg-block'>
