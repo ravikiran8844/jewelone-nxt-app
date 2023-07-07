@@ -34,9 +34,9 @@ const HomeTextSection = () => {
                     <div className='home-text mb-3'>
                     Welcome to our Jewelry Experience Center, where beauty meets elegance and sophistication. Step into a world of shimmering brilliance as you explore our extensive collection of gold, silver, diamond and platinum jewelry. 
                     </div>
-                    <div className='d-none d-md-block home-text'>
+                    {/* <div className='d-none d-md-block home-text'>
                     Whether you&rsquo;re seeking a statement piece for a special occasion or a daily adornment that reflects your unique style, our experience center offers something for everyone.
-                    </div>
+                    </div> */}
                 </div>
                 <div className='hts-img-wrapper d-none d-md-block'>
                     <Image className=' d-none d-md-block' width={1200} height={1200} src="/bg-ring.png" alt="background ring"/>
