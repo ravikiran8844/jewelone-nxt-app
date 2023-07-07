@@ -12,7 +12,7 @@ const HomeTextSection = () => {
                     Women deserves to
                     </div>
                     <div className='home-text-sec-title d-block d-md-none'>
-                    <span><Image src="/jewel-ring.png" width={83} height={72} alt="logo" /></span>
+                    {/* <span><Image src="/jewel-ring.png" width={83} height={72} alt="logo" /></span> */}
                         <span className='ms-3'>shine bright in</span>
                     </div>
                     <div className='home-text-sec-title d-block d-md-none'>
@@ -34,8 +34,8 @@ const HomeTextSection = () => {
                     <div className='home-text mb-3'>
                     Welcome to our Jewelry Experience Center, where beauty meets elegance and sophistication. Step into a world of shimmering brilliance as you explore our extensive collection of gold, silver, diamond and platinum jewelry. 
                     </div>
-                    <div className='home-text'>
-                    Whether you are seeking a statement piece for a special occasion or a daily adornment that reflects your unique style, our experience center offers something for everyone.
+                    <div className='d-none d-md-block home-text'>
+                    Whether you&rsquo;re seeking a statement piece for a special occasion or a daily adornment that reflects your unique style, our experience center offers something for everyone.
                     </div>
                 </div>
                 <div className='hts-img-wrapper d-none d-md-block'>
