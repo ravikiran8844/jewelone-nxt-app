@@ -3,6 +3,7 @@
 }
 .main-image-slider{
     max-height: 890px;
+    height: auto;
     overflow: hidden;
 }
 .image-banner__item .form-control{
@@ -86,7 +87,6 @@ background-color: #FCFCFC !important;
 .image-banner__desktop-img {
     min-height: 600px;
     width: 100%;
-    max-height: 890px;
     object-fit: cover;
     object-position: top;
 }
@@ -101,7 +101,7 @@ background-color: #FCFCFC !important;
 }
 .image-banner__item-content-mobile-title{
     color: #FFF;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-family: __Canela_Trial_3ac660;
     line-height: 92%;
     letter-spacing: -2.213px;
@@ -174,4 +174,9 @@ background-color: #FCFCFC !important;
     max-width: 200px;
     width: 100%;
     height: auto;
+}
+@media(min-width:640px){
+    .image-banner__item-content-mobile{
+        display: none !important;
+    }
 }
