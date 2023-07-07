@@ -119,6 +119,7 @@ background-color: #FCFCFC !important;
 .image-banner__mobile-img {
     width: 100%;
     height: auto;
+    max-height: 600px;
 }
 .image-banner__item-content img{
     max-width: 200px;
@@ -175,8 +176,8 @@ background-color: #FCFCFC !important;
     width: 100%;
     height: auto;
 }
-@media(min-width:640px){
+/* @media(min-width:640px){
     .image-banner__item-content-mobile{
         display: none !important;
     }
-}
+} */
