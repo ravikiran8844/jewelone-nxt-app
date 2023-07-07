@@ -1,0 +1,39 @@
+.map-item img{
+    min-height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.map-item{
+    position: relative;
+}
+.card_wrapper{
+    width: 300px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.map-item-title{
+    font-family: __Canela_Trial_3ac660;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal
+}
+.map-item-text{
+    font-family: __SharpSans_002b07;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+.map-item a{
+    color: rgb(26, 115, 232) !important;
+    font-family: __SharpSans_002b07;
+    text-decoration: none;
+    font-size: 14px;
+
+}

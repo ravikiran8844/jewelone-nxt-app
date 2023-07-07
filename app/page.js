@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import LogoWithTextSection from '@/components/LogoWithTextSection/LogoWithTextSection'
 import VideoSection from '@/components/VideoSection/VideoSection'
@@ -8,18 +7,19 @@ import CollectionsSection from '@/components/CollectionsSection/CollectionsSecti
 import Test from '@/components/Test/Test'
 import ImagesSliderSection from '@/components/ImagesSliderSection/ImagesSliderSection'
 import HomeTextSection from '@/components/HomeTextSection/HomeTextSection'
+import MapSection from '@/components/MapSection/MapSection'
 
 export default function Home() {
   return (
    <div>
-    {/* <Test/> */}
     <ImageBannerSection/>
     <HomeTextSection/>
     <LogoWithTextSection/>
     <ImagesSliderSection/>
     <CollectionsSection/>
     <VideoSection/>
-    <LocateUsSection/>
+    {/* <LocateUsSection/> */}
+    <MapSection/>
    </div>
   )
 }
