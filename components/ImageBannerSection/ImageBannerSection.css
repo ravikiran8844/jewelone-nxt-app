@@ -51,10 +51,10 @@ background-color: #FCFCFC !important;
     border-radius: 5.444px;
     border: 1px solid #E8E8E8;
     background: #FCFCFC !important;
-    height: 50px;
+    height: 40px;
 }
 
-.image-banner__item .form-btn{
+.image-banner__item .form-btn,.book-now-form .form-btn{
     border-radius: 7.042px;
     background: #9F212C;
     color: #FFF;
@@ -77,19 +77,20 @@ background-color: #FCFCFC !important;
 }
 .book-slot-text{
     color: #C0832B;
-    font-size: 32px;
+    font-size: 28px;
     font-family: __Canela_Trial_3ac660;
 }
 .image-banner__item img{
     position: relative;
 }
 .image-banner__desktop-img {
-    min-height: 890px;
+    min-height: 600px;
     width: 100%;
     max-height: 890px;
     object-fit: cover;
     object-position: top;
 }
+
 .image-banner__item-content-mobile{
     position: absolute;
     bottom: 0;
@@ -120,8 +121,7 @@ background-color: #FCFCFC !important;
     height: auto;
 }
 .image-banner__item-content img{
-    max-width: 294px;
-    max-height: 74px;
+    max-width: 200px;
     width: 100%;
     height: auto;
 }
@@ -138,10 +138,17 @@ background-color: #FCFCFC !important;
     background: #FFF;
     box-shadow: 0px 0px 76.21160888671875px -23.952219009399414px rgba(0, 0, 0, 0.32);
 }
+.book-now-form{
+    max-width: 490px;
+    border-radius: 37.017px;
+    background: #FFF;
+    box-shadow: 0px 0px 76.21160888671875px -23.952219009399414px rgba(0, 0, 0, 0.32);
+    margin: auto;
+}
 
 .image-banner__item-content label{
     color: #2D2D2D;
-    font-size: 20px;
+    font-size: 18px;
     font-family: __Canela_Trial_3ac660;
     font-style: normal;
     font-weight: 400;
@@ -149,8 +156,8 @@ background-color: #FCFCFC !important;
     letter-spacing: 0.4px;
 }
 .image-banner__item-content input[type="checkbox"]{
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     border-radius: 5.444px;
     border: 1px solid #E8E8E8;
     background: #FCFCFC;
@@ -162,4 +169,9 @@ background-color: #FCFCFC !important;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
+}
+.form-img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }

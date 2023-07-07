@@ -44,6 +44,7 @@
 }
 .footer_wrapper a{
     text-decoration: none;
+    color:#fff !important;
 }
 .appStore img{
 max-width:133px;

@@ -4,7 +4,6 @@ import Flickity from 'react-flickity-component'
 import "flickity/css/flickity.css";
 import './ImageBannerSection.css'
 import Image from 'next/image'
-import { GoogleSpreadsheet } from "google-spreadsheet";
 
 
 
@@ -153,18 +152,18 @@ const sendDataToSheets=async()=>{
 
 }
 
-    return(<div className='image-banner__item-content col-lg-5  p-4 py-5 d-none d-lg-block'>
+    return(<div className='image-banner__item-content col-lg-5  p-4 d-none d-lg-block'>
     <div>
     <div className='text-center'>
          <div className='mb-4'>
-             <Image width={294} height={74} src="/logo.png" alt="Logo" />
+             <Image className='form-img' width={160} height={40} src="/logo.png" alt="Logo" />
          </div>
          <div className='mb-4 book-slot-text'>
          Book Your Slot
          </div>
      </div>
      <div className='row gx-2'>
-         <div className='col-6 mb-4'>
+         <div className='col-6 mb-3'>
              <label htmlFor="first-name">First name<span className='star'>*</span></label>
              <input
              className={`form-control ${!firstNameValid ? 'is-invalid' : ''}`}
@@ -177,7 +176,7 @@ const sendDataToSheets=async()=>{
              />
              {!firstNameValid && <div className="invalid-feedback">Please enter your first name.</div>}
          </div>
-         <div className='col-6 mb-4'>
+         <div className='col-6 mb-3'>
              <label htmlFor="last-name">Last name<span className='star'>*</span></label>
              <input
              className={`form-control ${!lastNameValid ? 'is-invalid' : ''}`}
@@ -190,7 +189,7 @@ const sendDataToSheets=async()=>{
              />
              {!lastNameValid && <div className="invalid-feedback">Please enter your last name.</div>}
          </div>
-         <div className='col-6 mb-4'>
+         <div className='col-6 mb-3'>
              <label htmlFor="city">City<span className='star'>*</span></label>
              <input
              className={`form-control ${!cityValid ? 'is-invalid' : ''}`}
@@ -203,7 +202,7 @@ const sendDataToSheets=async()=>{
              />
              {!cityValid && <div className="invalid-feedback">Please enter your city.</div>}
          </div>
-         <div className='col-6 mb-4'>
+         <div className='col-6 mb-3'>
              <label htmlFor="phone-num">Phone Number<span className='star'>*</span></label>
              <input
              className={`form-control ${!phoneNumberValid ? 'is-invalid' : ''}`}
@@ -216,7 +215,7 @@ const sendDataToSheets=async()=>{
              />
              {!phoneNumberValid && <div className="invalid-feedback">Please enter a valid 10-digit phone number.</div>}
          </div>
-         <div className='col-12 mb-4'>
+         <div className='col-12 mb-3'>
              <label htmlFor="email">Email address<span className='star'>*</span></label>
              <input
              className={`form-control ${!emailValid ? 'is-invalid' : ''}`}
@@ -229,7 +228,7 @@ const sendDataToSheets=async()=>{
              />
              {!emailValid && <div className="invalid-feedback">Please enter a valid email address.</div>}
          </div>
-         <div className='col-6 mb-4'>
+         <div className='col-6 mb-3'>
              <label>Factory Visit:</label>
              <div className='factory-visit d-flex align-items-center mt-2'>
              <label htmlFor="yes">Yes</label>
@@ -252,7 +251,7 @@ const sendDataToSheets=async()=>{
              />
              </div>
          </div>
-         <div className='col-6 mt-4'>
+         <div className='col-6 mt-3'>
              <div className=''>
              <button
                  className='btn form-btn text-white px-3 py-2 w-100'

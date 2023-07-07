@@ -18,8 +18,8 @@
 
 @media (min-width:768px) {
     .lwts-wrapper img{
-        width: 100%;
         height: auto;
+        width: 80%;
         max-width: 150px;
         max-height: 150px;
     }
