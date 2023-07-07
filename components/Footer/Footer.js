@@ -27,8 +27,6 @@ const Footer = () => {
                     <div className='col col-md-4 mb-4 order-2 order-md-1'>
                             <div className='link-items footer-border-right'>
                                 <div className='footer-main-text mb-4'>Information</div>
-                                    <div className='footer-links footer-text'><Link href="https://jewelone.in/">Blog</Link></div>
-                                    <div className='footer-links footer-text'><Link href="https://jewelone.in/">Offers & Contest Details</Link></div>
                                     <div className='footer-links footer-text'><Link href="https://jewelone.in/">Help & FAQs</Link></div>
                                     <div className='footer-links footer-text'><Link className="text-white" href="https://jewelone.in/aboutus.html">About JewelOne</Link></div>
                             </div>
