@@ -193,7 +193,7 @@ const sendDataToSheets=async()=>{
              <input
              className={`form-control ${!phoneNumberValid ? 'is-invalid' : ''}`}
              type="tel"
-             placeholder='+91'
+             placeholder='Enter phone number'
              id='phone-num'
              name="phone-num"
              value={phoneNumber}

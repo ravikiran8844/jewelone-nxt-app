@@ -155,10 +155,10 @@ const sendDataToSheets=async()=>{
     return(<div className='image-banner__item-content col-lg-5  p-4 d-none d-lg-block'>
     <div>
     <div className='text-center'>
-         <div className='mb-4'>
+         <div className='mb-3'>
              <Image className='form-img' width={160} height={40} src="/logo.png" alt="Logo" />
          </div>
-         <div className='mb-4 book-slot-text'>
+         <div className='mb-3 book-slot-text'>
          Book Your Slot
          </div>
      </div>
@@ -207,7 +207,7 @@ const sendDataToSheets=async()=>{
              <input
              className={`form-control ${!phoneNumberValid ? 'is-invalid' : ''}`}
              type="tel"
-             placeholder='+91'
+             placeholder='Enter phone number'
              id='phone-num'
              name="phone-num"
              value={phoneNumber}
@@ -296,7 +296,7 @@ const ImageBannerSection = () => {
                         Indian GlamBride
                         </div>
                         <div className='image-banner__item-content-mobile-text'>
-                        Discover a new essential collection of weddingjewelry for the 2023 season.
+                        Discover a new essential collection of wedding jewelry for the 2023 season.
                         </div>
                     </div>    
                 </div>
@@ -320,7 +320,7 @@ const ImageBannerSection = () => {
                         Indian GlamBride
                         </div>
                         <div className='image-banner__item-content-mobile-text'>
-                        Discover a new essential collection of weddingjewelry for the 2023 season.
+                        Discover a new essential collection of wedding jewelry for the 2023 season.
                         </div>
                     </div>    
                 </div>
@@ -344,7 +344,7 @@ const ImageBannerSection = () => {
                         Indian GlamBride
                         </div>
                         <div className='image-banner__item-content-mobile-text'>
-                        Discover a new essential collection of weddingjewelry for the 2023 season.
+                        Discover a new essential collection of wedding jewelry for the 2023 season.
                         </div>
                     </div>    
                 </div>
