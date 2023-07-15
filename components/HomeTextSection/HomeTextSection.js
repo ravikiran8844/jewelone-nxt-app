@@ -19,15 +19,15 @@ const HomeTextSection = () => {
                     own unique style
                     </div>
                     <div className='home-text-sec-title d-none d-md-block'>
-                    Every jewel
+                    You Dream it,
                     </div>
                     <div className='home-text-sec-title d-none d-md-block'>
                     <span><Image src="/jewel-ring.png" width={83} height={72} alt="logo" /></span>
-                        <span className='ms-3'>tells a story,</span>
+                        <span className='ms-3'>We Make it</span>
                     </div>
-                    <div className='home-text-sec-title d-none d-md-block'>
+                    {/* <div className='home-text-sec-title d-none d-md-block'>
                     let yours shine bright
-                    </div>
+                    </div> */}
                     <div className='home-caption-text mt-5 mb-3'>
                     About JewelOne Experience Center
                     </div>
